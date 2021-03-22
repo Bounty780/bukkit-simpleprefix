@@ -21,7 +21,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
-SimplePrefix spr = new SimplePrefix();
+
 
  /**
  * This class will automatically register as a placeholder expansion 
@@ -33,7 +33,8 @@ SimplePrefix spr = new SimplePrefix();
  * {@code new YourExpansionClass().register();}
  */
   public class PrefixExpansion extends SimplePrefixExpansion {
-
+  
+    SimplePrefix spr = new SimplePrefix();
     /**
      * This method should always return true unless we
      * have a dependency we need to make sure is on the server
