@@ -1,7 +1,7 @@
 package com.flabaliki.simpleprefix; 
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import SimplePrefix;
+import SimplePrefix.SimplePrefix;
 
 import java.io.File;
 import java.text.DateFormat;
