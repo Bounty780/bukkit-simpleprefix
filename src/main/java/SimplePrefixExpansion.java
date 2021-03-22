@@ -2,7 +2,7 @@
 // Decompiled. Apparently.
 // 
 
-package com.extendedclip.papi.simpleprefix;
+package SimplePrefixMod;
 
 import org.bukkit.metadata.MetadataValue;
 import org.bukkit.entity.Player;
