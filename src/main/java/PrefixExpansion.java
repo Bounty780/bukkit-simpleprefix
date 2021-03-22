@@ -1,6 +1,6 @@
 package com.flabaliki.simpleprefix; 
 
-import com.flabaliki.simpleprefix.SimplePrefix;
+import static simpleprefix.SimplePrefix;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 
@@ -94,12 +94,12 @@ import org.bukkit.scheduler.BukkitScheduler;
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
-            return simpleprefix.prefix;
+            return prefix;
         }
 
         // %example_placeholder2%
         if(identifier.equals("suffix")){
-            return simpleprefix.suffix;
+            return suffix;
         }
 
         // We return null if an invalid placeholder (f.e. %example_placeholder3%) 
