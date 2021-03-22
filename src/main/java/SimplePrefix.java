@@ -26,6 +26,8 @@ import net.milkbowl.vault.chat.Chat;
 
 public class SimplePrefix extends JavaPlugin implements Listener
 {
+  String prefix = config.getPrefix(player);
+  String suffix = config.getSuffix(player);
   static String pluginName;
   static File pluginFolder;
   static String pluginVersion;
@@ -89,8 +91,6 @@ public class SimplePrefix extends JavaPlugin implements Listener
   public void onPlayerChat(AsyncPlayerChatEvent event)
   {
     Player player = event.getPlayer();
-    String prefix = config.getPrefix(player);
-    String suffix = config.getSuffix(player);
     String world = config.getWorld(player);
     String message = event.getMessage().replaceAll("%", "%%");
     if (template == null) template = "<[time] [world] [prefix][name][suffix]> ";
