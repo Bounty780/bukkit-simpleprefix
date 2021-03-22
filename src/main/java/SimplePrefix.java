@@ -41,7 +41,7 @@ public class SimplePrefix extends JavaPlugin implements Listener
   BukkitScheduler scheduler = null;
   ConcurrentHashMap<String, String> uuids = new ConcurrentHashMap<String, String>();
   static Boolean autoupdate;
-  public chat = null;
+  public Chat chat = null;
   boolean useVault = false;
   static Boolean debug;
   static Boolean allowOps;
