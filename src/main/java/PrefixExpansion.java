@@ -1,7 +1,6 @@
 package com.flabaliki.simpleprefix; 
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import me.clip.placeholderapi.expansion.SimplePrefixExpansion;
 
 import java.io.File;
 import java.text.DateFormat;
@@ -32,6 +31,7 @@ import org.bukkit.scheduler.BukkitScheduler;
  * register it manually in your plugins {@code onEnable()} by using 
  * {@code new YourExpansionClass().register();}
  */
+  public class SimplePrefixExpansion{}
   public class PrefixExpansion extends SimplePrefixExpansion {
 
     /**
