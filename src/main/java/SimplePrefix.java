@@ -1,4 +1,4 @@
-package SimplePrefixMod;
+package com.flabaliki.simpleprefix;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 
