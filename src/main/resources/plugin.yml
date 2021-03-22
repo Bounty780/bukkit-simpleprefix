@@ -1,7 +1,6 @@
 name: SimplePrefix
 main: com.flabaliki.simpleprefix.SimplePrefix
-version: 2.5.2
-api-version: 1.13
+version: 2.5.1
 softdepend: [Vault]
 commands:
     spr:
