@@ -19,7 +19,7 @@
   
   <!-- The Basics -->
   <groupId>com.flabaliki.simpleprefix</groupId>
-  <artifactId>simpleprefix_mod</artifactId>
+  <artifactId>simpleprefix</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
   <dependencies>
