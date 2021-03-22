@@ -12,19 +12,15 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 public class SimplePrefixExpansion extends PlaceholderExpansion
 {
     public boolean canRegister() {
-        return Bukkit.getPluginManager().getPlugin(this.getPlugin()) != null;
+        return True;
     }
     
     public String getAuthor() {
-        return "clip";
+        return "Bounty and Clip";
     }
     
     public String getIdentifier() {
         return "simpleprefix";
-    }
-    
-    public String getPlugin() {
-        return "SimplePrefix";
     }
     
     public String getVersion() {
