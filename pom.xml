@@ -7,13 +7,12 @@
           <id>placeholderapi</id>
           <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
       </repository>
-  </repositories>
-    <repositories>
       <repository>
           <id>spigot-repo</id>
           <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
       </repository>
   </repositories>
+  
   <!-- The Basics -->
   <groupId>com.flabaliki.simpleprefix</groupId>
   <artifactId>simpleprefix_mod</artifactId>
