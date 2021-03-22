@@ -2,7 +2,7 @@
 // Decompiled. Apparently.
 // 
 
-package SimplePrefixMod;
+package com.flabaliki.simpleprefix;
 
 import org.bukkit.metadata.MetadataValue;
 import org.bukkit.entity.Player;
