@@ -1,7 +1,7 @@
 package com.flabaliki.simpleprefix; 
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import com.flabaliki.simpleprefix.SimplePrefix;
+import static com.flabaliki.simpleprefix.SimplePrefix;
 
 import java.io.File;
 import java.text.DateFormat;
@@ -94,12 +94,12 @@ import org.bukkit.scheduler.BukkitScheduler;
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
-            return SimplePrefix.prefix;
+            return prefix;
         }
 
         // %example_placeholder2%
         if(identifier.equals("suffix")){
-            return SimplePrefix.suffix;
+            return suffix;
         }
 
         // We return null if an invalid placeholder (f.e. %example_placeholder3%) 
