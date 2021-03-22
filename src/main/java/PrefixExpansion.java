@@ -1,7 +1,5 @@
 package SimplePrefixMod; 
 
-import SimplePrefixMod.SimplePrefix;
-
 import me.clip.placeholderapi.PlaceholderAPI;
 
 import java.io.File;
@@ -22,6 +20,8 @@ import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
+
+SimplePrefix spr = new SimplePrefix();
 
  /**
  * This class will automatically register as a placeholder expansion 
@@ -94,12 +94,12 @@ import org.bukkit.scheduler.BukkitScheduler;
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
-            return onPlayerChat.prefix;
+            return spr.prefix;
         }
 
         // %example_placeholder2%
         if(identifier.equals("suffix")){
-            return onPlayerChat.suffix;
+            return spr.suffix;
         }
 
         // We return null if an invalid placeholder (f.e. %example_placeholder3%) 
