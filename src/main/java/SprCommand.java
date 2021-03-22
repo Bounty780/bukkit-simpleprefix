@@ -1,4 +1,4 @@
-package com.flabaliki.simpleprefix;
+package SimplePrefixMod;
 
 import java.util.HashSet;
 

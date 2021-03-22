@@ -18,7 +18,7 @@
   </repositories>
   
   <!-- The Basics -->
-  <groupId>com.flabaliki.simpleprefix</groupId>
+  <groupId>SimplePrefixMod</groupId>
   <artifactId>simpleprefix</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>

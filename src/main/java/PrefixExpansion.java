@@ -1,6 +1,6 @@
-package com.flabaliki.simpleprefix; 
+package SimplePrefixMod; 
 
-import static simpleprefix.SimplePrefix;
+import static SimplePrefixMod.SimplePrefix;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 

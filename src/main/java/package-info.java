@@ -1,1 +1,1 @@
-package com.flabaliki.simpleprefix;
+package SimplePrefixMod;
