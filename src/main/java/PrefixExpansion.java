@@ -1,7 +1,8 @@
 package com.flabaliki.simpleprefix; 
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import me.clip.placeholderapi.expansion.SimplePrefixExpansion;
+import SimplePrefixExpansion;
+import SimplePrefix;
 
 import java.io.File;
 import java.text.DateFormat;
@@ -41,7 +42,6 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return always true since we do not have any dependencies.
      */
-    @Override
     public boolean canRegister(){
         return true;
     }
@@ -51,7 +51,6 @@ import org.bukkit.scheduler.BukkitScheduler;
      * 
      * @return The name of the author as a String.
      */
-    @Override
     public String getAuthor(){
         return "Bounty";
     }
@@ -65,7 +64,6 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return The identifier in {@code %<identifier>_<value>%} as String.
      */
-    @Override
     public String getIdentifier(){
         return "simpleprefix";
     }
@@ -94,8 +92,7 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return Possibly-null String of the requested identifier.
      */
-    @Override
-    public String onRequest(OfflinePlayer player, String identifier){
+    public String onRequest(player, String identifier){
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
