@@ -41,7 +41,7 @@ public class SimplePrefix extends JavaPlugin implements Listener
   BukkitScheduler scheduler = null;
   ConcurrentHashMap<String, String> uuids = new ConcurrentHashMap<String, String>();
   static Boolean autoupdate;
-  public Chat = null;
+  public chat = null;
   boolean useVault = false;
   static Boolean debug;
   static Boolean allowOps;
@@ -95,7 +95,7 @@ public class SimplePrefix extends JavaPlugin implements Listener
     String message = event.getMessage().replaceAll("%", "%%");
     if (template == null) template = "<[time] [world] [prefix][name][suffix]> ";
     if (timeFormat == null) timeFormat = "[h:mm aa]";
-    String formattedName = PlaceholderAPI.setPlaceholders(event.getPlayer(), formattedName).template.replaceAll("\\[world\\]", world).replaceAll("\\[prefix\\]", prefix).replaceAll("\\[name\\]", player.getDisplayName()).replaceAll("\\[suffix\\]", suffix).replaceAll("(&([A-Fa-f0-9L-Ol-okKrR]))", "&$2");
+    String formattedName = template.replaceAll("\\[world\\]", world).replaceAll("\\[prefix\\]", prefix).replaceAll("\\[name\\]", player.getDisplayName()).replaceAll("\\[suffix\\]", suffix).replaceAll("(&([A-Fa-f0-9L-Ol-okKrR]))", "&$2"), PlaceholderAPI.setPlaceholders(event.getPlayer(), formattedName);
     if ((timeFormat != null) && (!timeFormat.equalsIgnoreCase("")) && (formattedName.contains("[time]"))) {
       DateFormat dateFormat = new SimpleDateFormat(timeFormat);
       Date date = new Date();
