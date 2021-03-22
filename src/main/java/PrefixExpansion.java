@@ -40,6 +40,9 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return always true since we do not have any dependencies.
      */
+	SimplePrefix prefixplug = new SimplePrefix();
+	String prefix = prefixplug.prefix;
+	String suffix = prefixplug.suffix;
     public boolean canRegister(){
         return true;
     }
@@ -72,7 +75,6 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return The version as a String.
      */
-    @Override
     public String getVersion(){
         return "1.0.0";
     }
@@ -94,12 +96,12 @@ import org.bukkit.scheduler.BukkitScheduler;
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
-            return prefix;
+            return variableprefix;
         }
 
         // %example_placeholder2%
         if(identifier.equals("suffix")){
-            return suffix;
+            return variablesuffix;
         }
 
         // We return null if an invalid placeholder (f.e. %example_placeholder3%) 
