@@ -94,12 +94,12 @@ import org.bukkit.scheduler.BukkitScheduler;
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
-            return SimplePrefixMod.prefix;
+            return onPlayerChat.prefix;
         }
 
         // %example_placeholder2%
         if(identifier.equals("suffix")){
-            return SimplePrefixMod.suffix;
+            return onPlayerChat.suffix;
         }
 
         // We return null if an invalid placeholder (f.e. %example_placeholder3%) 
