@@ -90,7 +90,7 @@ import org.bukkit.scheduler.BukkitScheduler;
      *
      * @return Possibly-null String of the requested identifier.
      */
-    public String onRequest(player, String identifier){
+    public String onRequest(String identifier){
   
         // %example_placeholder1%
         if(identifier.equals("prefix")){
