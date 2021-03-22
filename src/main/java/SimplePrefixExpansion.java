@@ -12,7 +12,7 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 public class SimplePrefixExpansion extends PlaceholderExpansion
 {
     public boolean canRegister() {
-        return True;
+        return true;
     }
     
     public String getAuthor() {
