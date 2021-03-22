@@ -8,6 +8,6 @@ jobs:
     - name: Create a Release
       uses: elgohr/Github-Release-Action@master
       env:
-        GITHUB_TOKEN: 4550b7daeaf00f819e3b9f352bc82cc3dbfde969
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         args: A new dumb release I guess?
