@@ -89,8 +89,12 @@ public class SimplePrefix extends JavaPlugin implements Listener
   public void onPlayerChat(AsyncPlayerChatEvent event)
   {
     Player player = event.getPlayer();
-    public String prefix = config.getPrefix(player);
-    public String suffix = config.getSuffix(player);
+    public String prefix(){
+		config.getPrefix(player)
+		};
+    public String suffix(){
+		config.getSuffix(player)
+		};
     String world = config.getWorld(player);
     String message = event.getMessage().replaceAll("%", "%%");
     if (template == null) template = "<[time] [world] [prefix][name][suffix]> ";
