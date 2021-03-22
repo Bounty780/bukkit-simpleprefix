@@ -1,11 +1,14 @@
 package com.flabaliki.simpleprefix;
 
+import me.clip.placeholderapi.PlaceholderAPI;
+
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
+import me.clip.placeholderapi.PlaceholderAPI;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -92,7 +95,7 @@ public class SimplePrefix extends JavaPlugin implements Listener
     String message = event.getMessage().replaceAll("%", "%%");
     if (template == null) template = "<[time] [world] [prefix][name][suffix]> ";
     if (timeFormat == null) timeFormat = "[h:mm aa]";
-    String formattedName = template.replaceAll("\\[world\\]", world).replaceAll("\\[prefix\\]", prefix).replaceAll("\\[name\\]", player.getDisplayName()).replaceAll("\\[suffix\\]", suffix).replaceAll("(&([A-Fa-f0-9L-Ol-okKrR]))", "�$2");
+    String formattedName = PlaceholderAPI.setPlaceholders(event.getPlayer(), formattedName).template.replaceAll("\\[world\\]", world).replaceAll("\\[prefix\\]", prefix).replaceAll("\\[name\\]", player.getDisplayName()).replaceAll("\\[suffix\\]", suffix).replaceAll("(&([A-Fa-f0-9L-Ol-okKrR]))", "�$2");
     if ((timeFormat != null) && (!timeFormat.equalsIgnoreCase("")) && (formattedName.contains("[time]"))) {
       DateFormat dateFormat = new SimpleDateFormat(timeFormat);
       Date date = new Date();
