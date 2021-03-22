@@ -30,7 +30,7 @@ public class Config
 
   public void firstRun()
   {
-	  File file = new File(plugin.getDataFolder() + "/src/
+	  File file = new File(plugin.getDataFolder() + "/src/main/
 			      resources/config.yml");
 	  if (!file.exists()){
 		  plugin.saveDefaultConfig();
